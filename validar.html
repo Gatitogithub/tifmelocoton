@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/validar.css">
+    <link rel="icon" href="img/Icons y mas/ico-title.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Ticket Show</title>
+
+</head>
+
+<body>
+    <!-- barra menu -->
+    <header>
+        <nav class="header-he">
+            <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="ico-title">
+            <h1>TicketShow</h1>
+            </a>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="teatro.html">Teatro</a></li>
+                <li><a href="deporte.html">Deporte</a></li>
+                <li><a href="validar.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin de la barra de menu -->
+    
+
+    <div class="formulario" id="formulario"></div>
+    <h3>
+        <center><b>Formulario de Contacto</b></center>
+    </h3>
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre"> Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre"><br><br>
+        <label for="email"> Email: </label>
+        <input type="text" name="email" id="email" placeholder="Ingresá tu email"><br><br>
+        <label for="telefono"> Teléfono:</label>
+        <input type="text" name="tel" id="tel" placeholder="Ingresá tu teléfono"><br><br>
+        <label for="mensaje"> Mensaje:</label>
+        <textarea name="mensaje" rows="10" cols="20" id="mensaje" maxlength="250"></textarea>
+        <center><input type="submit" value="Enviar"></center>
+        <br>
+    </form>
+    </div>
+    <hr>
+    <section class="map">
+        <h3>Como Llegar:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.721763613114!2d-58.381487124406796!3d-34.58590615655749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb03784129ab%3A0xf6a947c8c4a605b0!2sCodo%20a%20Codo%20-%20Apoyo%20Escolar!5e0!3m2!1ses-419!2sar!4v1698270228510!5m2!1ses-419!2sar" class="map_map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr>
+
+
+    <footer>
+        <div class="footerop">
+            <p>Diseñado por team Melocotón - Comisión 23450</p>
+            <p>Seguinos en las redes </p>
+            <a href="https://www.instagram.com/" class='bx bxl-instagram  bx-md' target="_blank"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" class='bx bxl-facebook-circle  bx-md' target="_blank"></a>
+            <a href="https://twitter.com/?lang=es" class='bx bxl-twitter  bx-md' target="_blank"></a>
+            <a href="mailto:melocoton1983@gmail.com" class='bx bx-envelope  bx-md' target="_blank"></a>
+            <p> Derechos reservados 2023</p>
+        </div>
+    </footer>
+
+    <script src="validar.js"></script>
+   <script src="script-inmde.js"></script>
+
+</body>
+
+</html>
